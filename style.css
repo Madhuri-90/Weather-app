@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b2ebf2;/* Soft peach background */
+; /* Light background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    width: 100%;
+    max-width: 450px; /* Limit the width */
+    background: linear-gradient(135deg, #72c2ff, #4e6fff); /* Gradient background */
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on title */
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #4e6fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #72c2ff; /* Focus effect on input */
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #4e6fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #72c2ff; /* Hover effect on button */
+}
+
+#weather-info {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for weather info box */
+}
+
+#weather-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#weather-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#weather-info p:first-of-type {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#error-message {
+    color: #ff4f4f;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
